@@ -12,7 +12,7 @@ public class First_05 {
 			bytesOfMessage = input.getBytes("UTF-8");
 			MessageDigest md = MessageDigest.getInstance("MD5");
 			byte[] thedigest = md.digest(bytesOfMessage);
-			// convert the byte to hex format method 1
+			// Convert the byte to hex format
 			StringBuffer sb = new StringBuffer();
 			for (int i = 0; i < thedigest.length; i++) {
 				sb.append(Integer.toString((thedigest[i] & 0xff) + 0x100, 16).substring(1));
