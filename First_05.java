@@ -34,7 +34,7 @@ public class First_05 {
 		String password = "";
 		String hash = "";
 		
-		while(ready < 15){
+		while(ready < 8){
 			hash = getMD5Hash(init + number);
 			if(hash.startsWith("00000")) {
 				password += hash.charAt(5);
@@ -44,8 +44,5 @@ public class First_05 {
 			number++;
 		}
 		System.out.println("Password: " + password);
-		
-
 	}
-
 }
